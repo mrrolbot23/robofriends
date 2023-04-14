@@ -23,11 +23,13 @@ class App extends Component {
         .includes(this.state.searchfield.toLowerCase());
     });
     return (
-      <div className="tc">
-        <h1>RoboFriends</h1>
-        <SearchBox searchChange={this.onSearchChange} />
-        <CardList robots={filteredRobots} />
-      </div>
+      <>
+        <div className="tc">
+          <h1>RoboFriends</h1>
+          <SearchBox searchChange={this.onSearchChange} />
+          <CardList robots={filteredRobots} />
+        </div>
+      </>
     );
   }
 }
